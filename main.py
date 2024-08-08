@@ -8,7 +8,7 @@ app = FastAPI()
 # Allow CORS for frontend application
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # frontend URL
+    allow_origins=["http://localhost:3000","https://vector-shift-ui.netlify.app/"],  # frontend URL
     allow_credentials=True,
     allow_methods=["*"],  # Allow all methods (GET, POST, etc.)
     allow_headers=["*"],  # Allow all headers
